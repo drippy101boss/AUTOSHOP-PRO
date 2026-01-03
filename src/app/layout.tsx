@@ -5,6 +5,7 @@ import ClientBody from "./ClientBody";
 import Script from "next/script";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </ClientBody>
+        <Analytics />
       </body>
     </html>
   );
